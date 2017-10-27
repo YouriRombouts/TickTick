@@ -26,7 +26,7 @@ public class SpriteGameObject : GameObject
         {
             return;
         }
-        sprite.Draw(spriteBatch, this.GlobalPosition, origin);
+        sprite.Draw(spriteBatch, this.GlobalPosition - Camera.Off, origin);
     }
 
     public SpriteSheet Sprite
