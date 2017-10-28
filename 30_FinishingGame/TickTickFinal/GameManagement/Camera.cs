@@ -14,11 +14,11 @@ using Microsoft.Xna.Framework;
             get
             {
                 Vector2 pos = new Vector2(Player.pos.X - GameEnvironment.Screen.X / 2, 0);
-                if (pos.X > GameEnvironment.Screen.X / 2)
+                if (pos.X < 0)
                 {
-                    return pos;
+                    return new Vector2(0, 0);
                 }
-                else return new Vector2(0, 0);
-                }
+                return pos;
+            }
         }
     }
