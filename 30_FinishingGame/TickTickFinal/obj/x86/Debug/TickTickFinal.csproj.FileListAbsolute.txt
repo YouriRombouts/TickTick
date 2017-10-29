@@ -174,3 +174,5 @@ C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Wind
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTickFinal.csprojResolveAssemblyReference.cache
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTick5.exe
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTick5.pdb
+C:\Users\Youri Rombouts\Documents\Visual Studio 2015\Projects\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\HeckingMusic.wma
+C:\Users\Youri Rombouts\Documents\Visual Studio 2015\Projects\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\HeckingMusic.xnb

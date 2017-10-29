@@ -88,6 +88,8 @@
       <Link>GameManagement\TextGameObject.cs</Link>
     </Compile>
     <Compile Include="GameManagement\Camera.cs" />
+    <Compile Include="GameManagement\StaticGameObject.cs" />
+    <Compile Include="GameManagement\StaticGameObjectList.cs" />
     <Compile Include="gameobjects\Clouds.cs" />
     <Compile Include="gameobjects\enemies\PatrollingEnemy.cs" />
     <Compile Include="gameobjects\enemies\PlayerFollowingEnemy.cs" />
@@ -347,6 +349,7 @@
       <Link>Content\Tiles\spr_wall_ice.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Sounds\Tick Tick.mp3" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\assets\ticktick\fonts\HintFont.xnb">
