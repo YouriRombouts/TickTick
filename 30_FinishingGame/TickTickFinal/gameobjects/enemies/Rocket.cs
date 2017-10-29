@@ -56,6 +56,7 @@ class Rocket : AnimatedGameObject
         else if (CollidesWith(player) && visible && Top.Intersects(player.BoundingBox))
         {
             this.Reset();
+            player.Jump();
         }
     }
 }
