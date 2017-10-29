@@ -47,10 +47,15 @@ class Rocket : AnimatedGameObject
 
     public void CheckPlayerCollision()
     {
+        Rectangle Top = new Rectangle((int)position.X, (int)position.Y, this.Width, 1);
         Player player = GameWorld.Find("player") as Player;
-        if (CollidesWith(player) && visible)
+        if (CollidesWith(player) && visible && !Top.Intersects(player.BoundingBox))
         {
             player.Die(false);
+        }
+        else if (CollidesWith(player) && visible && Top.Intersects(player.BoundingBox))
+        {
+            this.Reset();
         }
     }
 }
