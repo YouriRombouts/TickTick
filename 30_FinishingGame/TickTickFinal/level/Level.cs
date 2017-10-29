@@ -9,7 +9,6 @@ partial class Level : GameObjectList
     {
         // load the backgrounds
         GameObjectList backgrounds = new GameObjectList(0, "backgrounds");
-        StaticGameObjectList staticbackgrounds = new StaticGameObjectList(0, "staticbackgrounds");
         SpriteGameObject backgroundSky = new SpriteGameObject("Backgrounds/spr_sky");
         backgroundSky.Position = new Vector2(0, GameEnvironment.Screen.Y - backgroundSky.Height);
         backgrounds.Add(backgroundSky);
@@ -27,7 +26,7 @@ partial class Level : GameObjectList
         backgrounds.Add(clouds);
         Add(backgrounds);
 
-        SpriteGameObject timerBackground = new SpriteGameObject("Sprites/spr_timer", 100);
+        StaticSpriteGameObject timerBackground = new StaticSpriteGameObject("Sprites/spr_timer", 100);
         timerBackground.Position = new Vector2(10, 10);
         Add(timerBackground);
         TimerGameObject timer = new TimerGameObject(101, "timer");

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-public class SpriteGameObject : GameObject
+public class StaticSpriteGameObject : GameObject
 {
     protected SpriteSheet sprite;
     protected Vector2 origin;
     public bool PerPixelCollisionDetection = true;
 
-    public SpriteGameObject(string assetName, int layer = 0, string id = "", int sheetIndex = 0)
+    public StaticSpriteGameObject(string assetName, int layer = 0, string id = "", int sheetIndex = 0)
         : base(layer, id)
     {
         if (assetName != "")
@@ -20,7 +20,7 @@ public class SpriteGameObject : GameObject
         }
     }
 
-    public SpriteGameObject(int layer, string id)
+    public StaticSpriteGameObject(int layer, string id)
     {
         this.layer = layer;
         this.id = id;
@@ -32,7 +32,7 @@ public class SpriteGameObject : GameObject
         {
             return;
         }
-        sprite.Draw(spriteBatch, this.GlobalPosition - Camera.GetCameraOffset(), origin);
+        sprite.Draw(spriteBatch, this.GlobalPosition, origin);
     }
 
     public SpriteSheet Sprite
@@ -83,7 +83,7 @@ public class SpriteGameObject : GameObject
         }
     }
 
-    public bool CollidesWith(SpriteGameObject obj)
+    public bool CollidesWith(StaticSpriteGameObject obj)
     {
         if (!visible || !obj.visible || !BoundingBox.Intersects(obj.BoundingBox))
         {
