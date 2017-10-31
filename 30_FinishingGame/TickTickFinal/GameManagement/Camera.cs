@@ -8,13 +8,14 @@ using Microsoft.Xna.Framework;
 
     class Camera : GameObject
     {
+        static Vector2 m_Offset;
         public static Vector2 GetCameraOffset()
         {
-                Vector2 pos = new Vector2(Player.pos.X - GameEnvironment.Screen.X / 2, 0);
-                if (pos.X < 0)
-                {
-                    return new Vector2(0, 0);
-                }
-                return pos;
+            m_Offset = new Vector2(Player.pos.X - GameEnvironment.Screen.X / 2, 0);
+            if (GameStateManager.Playing == false)
+            {
+                return new Vector2(0, 0);
+            }
+            return m_Offset;
         }
     }
