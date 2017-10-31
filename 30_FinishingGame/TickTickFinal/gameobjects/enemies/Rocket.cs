@@ -4,10 +4,12 @@ class Rocket : AnimatedGameObject
 {
     protected double spawnTime;
     protected Vector2 startPosition;
+    int Mod = 1;
 
     public Rocket(bool moveToLeft, Vector2 startPosition)
     {
         LoadAnimation("Sprites/Rocket/spr_rocket@3", "default", true, 0.2f);
+        LoadAnimation("Sprites/Rocket/spr_explode@5x5", "explode", false, 0.04f);
         PlayAnimation("default");
         Mirror = moveToLeft;
         this.startPosition = startPosition;
@@ -20,6 +22,7 @@ class Rocket : AnimatedGameObject
         position = startPosition;
         velocity = Vector2.Zero;
         spawnTime = GameEnvironment.Random.NextDouble() * 5;
+        Mod = 1;
     }
 
     public override void Update(GameTime gameTime)
@@ -31,7 +34,7 @@ class Rocket : AnimatedGameObject
             return;
         }
         visible = true;
-        velocity.X = 600;
+        velocity.X = 600 * Mod;
         if (Mirror)
         {
             this.velocity.X *= -1;
@@ -52,11 +55,13 @@ class Rocket : AnimatedGameObject
         if (CollidesWith(player) && visible && !Top.Intersects(player.BoundingBox))
         {
             player.Die(false);
+            PlayAnimation("explode");
+            Mod = 0;
         }
-        else if (CollidesWith(player) && visible && Top.Intersects(player.BoundingBox))
-        {
-            this.Reset();
+        else if (Mod != 0 && CollidesWith(player) && visible && Top.Intersects(player.BoundingBox))
+        {         
             player.Jump();
+            this.Reset();
         }
     }
 }

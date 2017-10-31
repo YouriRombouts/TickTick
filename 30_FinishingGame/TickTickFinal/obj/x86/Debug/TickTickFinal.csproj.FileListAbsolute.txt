@@ -268,3 +268,4 @@ C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\W
 C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\SharpDX.RawInput.xml
 C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTickFinal.csprojResolveAssemblyReference.cache
+C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Rocket\spr_explode@5x5.xnb
