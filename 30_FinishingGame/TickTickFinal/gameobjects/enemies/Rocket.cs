@@ -52,16 +52,17 @@ class Rocket : AnimatedGameObject
     {
         Player player = GameWorld.Find("player") as Player;
         Rectangle Top = new Rectangle((int)this.position.X + 10, (int)this.position.Y - this.Height, this.Width - 10, 1);
-        if (CollidesWith(player) && visible && !Top.Intersects(player.BoundingBox))
+        if (Mod != 0 && CollidesWith(player) && visible && !Top.Intersects(player.BoundingBox))
         {
             player.Die(false);
-            PlayAnimation("explode");
-            Mod = 0;
+            Reset();
         }
-        else if (Mod != 0 && CollidesWith(player) && visible && Top.Intersects(player.BoundingBox))
+        else if (CollidesWith(player) && visible && Top.Intersects(player.BoundingBox) && player.Velocity.Y > 0)
         {         
             player.Jump();
-            this.Reset();
+            Mod = 0;
+            PlayAnimation("explode");
+            
         }
     }
 }
