@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework;
 
 partial class Level : GameObjectList
 {
+    public static int playingfieldwidth;
+
     public void LoadTiles(string path)
     {
         List<string> textLines = new List<string>();
@@ -34,6 +36,7 @@ partial class Level : GameObjectList
         Add(tiles);
         tiles.CellWidth = 72;
         tiles.CellHeight = 55;
+        playingfieldwidth = tiles.CellWidth * width;
         for (int x = 0; x < width; ++x)
         {
             for (int y = 0; y < textLines.Count - 1; ++y)

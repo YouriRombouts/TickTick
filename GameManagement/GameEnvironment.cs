@@ -17,6 +17,8 @@ public class GameEnvironment : Game
     protected static AssetManager assetManager;
     protected static GameSettingsManager gameSettingsManager;
 
+    public static int m_viewportwidth;
+
     public GameEnvironment()
     {
         graphics = new GraphicsDeviceManager(this);
@@ -126,6 +128,7 @@ public class GameEnvironment : Game
     {
         HandleInput();
         gameStateManager.Update(gameTime);
+        m_viewportwidth = graphics.GraphicsDevice.Viewport.Width;
     }
 
     protected override void Draw(GameTime gameTime)

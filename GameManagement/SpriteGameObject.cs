@@ -31,11 +31,23 @@ public class SpriteGameObject : GameObject
     {
         if (layer < 0 && layer > -20)
         {
-            offset = Camera.GetCameraOffset() / (-layer);
+            if (Level.playingfieldwidth <= Camera.GetCameraOffset().X + GameEnvironment.m_viewportwidth / 2)
+            {
+                offset = new Vector2(Level.playingfieldwidth - GameEnvironment.m_viewportwidth / 2, 0) / (-layer); 
+            }
+            else
+            {
+                offset = Camera.GetCameraOffset() / (-layer);
+            }
+               
         }
         else if (layer == -100 || layer == 100)
         {
             offset = new Vector2(0, 0);
+        }
+        else if (Level.playingfieldwidth <= Camera.GetCameraOffset().X + GameEnvironment.m_viewportwidth/2)
+        {
+            offset = new Vector2(Level.playingfieldwidth - GameEnvironment.m_viewportwidth/2, 0);
         }
         else
         {

@@ -21,4 +21,4 @@ using Microsoft.Xna.Framework;
                 }
                 return m_Offset;
             }
-    }
+}
