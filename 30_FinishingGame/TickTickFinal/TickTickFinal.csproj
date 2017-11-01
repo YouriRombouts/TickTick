@@ -88,7 +88,6 @@
       <Link>GameManagement\TextGameObject.cs</Link>
     </Compile>
     <Compile Include="GameManagement\Camera.cs" />
-    <Compile Include="GameManagement\StaticSpriteGameObject.cs" />
     <Compile Include="gameobjects\Clouds.cs" />
     <Compile Include="gameobjects\enemies\PatrollingEnemy.cs" />
     <Compile Include="gameobjects\enemies\PlayerFollowingEnemy.cs" />

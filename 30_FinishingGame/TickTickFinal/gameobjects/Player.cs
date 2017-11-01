@@ -11,6 +11,7 @@ partial class Player : AnimatedGameObject
     protected bool exploded;
     protected bool finished;
     protected bool walkingOnIce, walkingOnHot;
+    public static Vector2 pos;
 
     public Player(Vector2 start) : base(2, "player")
     {
@@ -74,6 +75,7 @@ partial class Player : AnimatedGameObject
 
     public override void Update(GameTime gameTime)
     {
+        pos = Position;
         base.Update(gameTime);
         if (!finished && isAlive)
         {

@@ -4,7 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/YourionY/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sounds/HeckingMusic.mp3</File>
-    <File>C:/Users/YourionY/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sprites/Rocket/spr_explode@5x5.png</File>
+    <File>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sounds/HeckingMusic.mp3</File>
+    <File>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sprites/Rocket/spr_explode@5x5.png</File>
   </SourceFiles>
 </SourceFileCollection>

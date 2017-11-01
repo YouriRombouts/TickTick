@@ -1,4 +1,4 @@
-﻿class Button : SpecialSpriteGameObject
+﻿class Button : SpriteGameObject
 {
     protected bool pressed;
 

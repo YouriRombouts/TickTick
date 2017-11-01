@@ -9,7 +9,7 @@ class LevelFinishedState : GameObjectList
     public LevelFinishedState()
     {
         playingState = GameEnvironment.GameStateManager.GetGameState("playingState");
-        SpecialSpriteGameObject overlay = new SpecialSpriteGameObject("Overlays/spr_welldone");
+        SpriteGameObject overlay = new SpriteGameObject("Overlays/spr_welldone" , 100);
         overlay.Position = new Vector2(GameEnvironment.Screen.X, GameEnvironment.Screen.Y) / 2 - overlay.Center;
         Add(overlay);
     }
