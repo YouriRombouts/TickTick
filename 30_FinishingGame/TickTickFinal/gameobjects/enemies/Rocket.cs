@@ -62,7 +62,6 @@ class Rocket : AnimatedGameObject
             player.Jump();
             Mod = 0;
             PlayAnimation("explode");
-            
         }
     }
 }
