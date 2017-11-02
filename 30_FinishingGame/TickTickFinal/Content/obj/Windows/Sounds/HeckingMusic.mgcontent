@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sounds/HeckingMusic.mp3</SourceFile>
-  <SourceTime>2017-10-29T14:31:31.1477414+01:00</SourceTime>
-  <DestFile>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/bin/Windows/Sounds/HeckingMusic.xnb</DestFile>
-  <DestTime>2017-11-01T14:58:14.0880081+01:00</DestTime>
+  <SourceFile>C:/Users/YourionY/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sounds/HeckingMusic.mp3</SourceFile>
+  <SourceTime>2017-10-31T12:35:06.7454928+01:00</SourceTime>
+  <DestFile>C:/Users/YourionY/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/bin/Windows/Sounds/HeckingMusic.xnb</DestFile>
+  <DestTime>2017-11-02T19:14:07.3376081+01:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/bin/Windows/Sounds/HeckingMusic.wma</string>
+    <string>C:/Users/YourionY/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/bin/Windows/Sounds/HeckingMusic.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

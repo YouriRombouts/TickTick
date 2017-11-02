@@ -11,7 +11,8 @@ partial class Player : AnimatedGameObject
     protected bool exploded;
     protected bool finished;
     protected bool walkingOnIce, walkingOnHot;
-    public static Vector2 pos;
+    public static Vector2 pos , PlayerVel;
+    public static bool PlayerMirrored;
 
     public Player(Vector2 start) : base(2, "player")
     {
@@ -75,7 +76,9 @@ partial class Player : AnimatedGameObject
 
     public override void Update(GameTime gameTime)
     {
+        PlayerMirrored = Mirror;
         pos = Position;
+        PlayerVel = velocity;
         base.Update(gameTime);
         if (!finished && isAlive)
         {
