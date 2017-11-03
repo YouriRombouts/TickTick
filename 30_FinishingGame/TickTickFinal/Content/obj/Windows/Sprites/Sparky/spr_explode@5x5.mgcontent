@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Youri Rombouts/Documents/Visual Studio 2015/Projects/TickTick/30_FinishingGame/TickTickFinal/Content/Sprites/Sparky/spr_explode@5x5.png</SourceFile>
-  <SourceTime>2017-10-31T17:09:32.2829053+01:00</SourceTime>
-  <DestFile>C:/Users/Youri Rombouts/Documents/Visual Studio 2015/Projects/TickTick/30_FinishingGame/TickTickFinal/Content/bin/Windows/Sprites/Sparky/spr_explode@5x5.xnb</DestFile>
-  <DestTime>2017-11-03T15:42:14.4556446+01:00</DestTime>
+  <SourceFile>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/Sprites/Sparky/spr_explode@5x5.png</SourceFile>
+  <SourceTime>2017-11-03T16:30:56.8209932+01:00</SourceTime>
+  <DestFile>C:/Users/timgo/Documents/GitHub/TickTick/30_FinishingGame/TickTickFinal/Content/bin/Windows/Sprites/Sparky/spr_explode@5x5.xnb</DestFile>
+  <DestTime>2017-11-03T16:34:31.1191364+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
