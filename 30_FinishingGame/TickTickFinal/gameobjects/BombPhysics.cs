@@ -13,6 +13,7 @@ partial class Bomb : AnimatedGameObject
         {
             HandleCollisions();
             Gravity();
+            Friction();
         }
     }
 
@@ -48,7 +49,10 @@ partial class Bomb : AnimatedGameObject
                     if (tileType == TileType.Normal)
                     {
                         position.X += depth.X;
-                        velocity.X = 0;
+                        if (isOnTheGround)
+                        {
+                            velocity.X = 0;
+                        }
                     }
                     continue;
                 }
@@ -74,7 +78,18 @@ partial class Bomb : AnimatedGameObject
     {
         if(!exploded && !isOnTheGround)
         {
-            velocity.Y += 55;
+            velocity.Y += 23;
+        }
+    }
+    public void Friction()
+    {
+        if (isOnIce)
+        {
+            velocity.X *= 0.995f;
+        }
+        else
+        {
+            velocity.X *= 0.99f;
         }
     }
 }

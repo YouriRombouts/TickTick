@@ -27,9 +27,9 @@ public partial class Bomb : AnimatedGameObject
             Thrown = true;
             position = Player.pos;
             PlayAnimation("default");
-            Timer = 2;
+            Timer = 3;
             AnimationTime = 1;
-            velocity = new Vector2(300, 100);
+            velocity = new Vector2(300, -300);
             if (Player.PlayerMirrored)
             {
                 velocity.X *= -1;

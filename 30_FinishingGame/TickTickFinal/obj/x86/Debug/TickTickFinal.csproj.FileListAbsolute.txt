@@ -273,3 +273,5 @@ C:\Users\Youri Rombouts\Documents\Visual Studio 2015\Projects\TickTick\30_Finish
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Rocket\spr_explode@5x5.xnb
 C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Bomb\Bomb.xnb
 C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Bomb\spr_explode@5x5.xnb
+C:\Users\Youri Rombouts\Documents\Visual Studio 2015\Projects\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Bomb\Bomb.xnb
+C:\Users\Youri Rombouts\Documents\Visual Studio 2015\Projects\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Bomb\spr_explode@5x5.xnb
