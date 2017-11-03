@@ -58,7 +58,7 @@ public class GameStateManager : IGameLoopObject
         {
             currentGameState.Update(gameTime);
         }
-        if (currentGameState == gameStates["playingState"])
+        if (currentGameState == gameStates["playingState"] || currentGameState == gameStates["gameOverState"])
         {
             Playing = true;
         }
