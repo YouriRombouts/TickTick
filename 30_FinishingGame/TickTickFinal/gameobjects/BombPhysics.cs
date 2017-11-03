@@ -59,7 +59,10 @@ partial class Bomb : AnimatedGameObject
                 if (previousYPosition <= tileBounds.Top && tileType != TileType.Background)
                 {
                     isOnTheGround = true;
-                    velocity.Y = 0;
+                    if(velocity.Y > 0)
+                    {
+                        velocity.Y = 0;
+                    }                    
                     if (currentTile != null)
                     {
                         isOnIce = isOnIce || currentTile.Ice;

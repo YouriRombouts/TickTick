@@ -41,8 +41,9 @@ class Rocket : AnimatedGameObject
             this.velocity.X *= -1;
         }
         CheckPlayerCollision();
+        CheckBombCollision();
         // check if we are outside the screen
-        Rectangle screenBox = new Rectangle(0, 0, GameEnvironment.Screen.X, GameEnvironment.Screen.Y);
+        Rectangle screenBox = new Rectangle(0, 0, Level.playingfieldwidth, GameEnvironment.Screen.Y);
         if (!screenBox.Intersects(this.BoundingBox))
         {
             Reset();
@@ -68,5 +69,12 @@ class Rocket : AnimatedGameObject
     public void CheckBombCollision()
     {
         Bomb m_Bomb = GameWorld.Find("bomb") as Bomb;
+        if (this.BoundingBox.Intersects(m_Bomb.BoundingBox) && visible && m_Bomb.Visible)
+        {
+            Mod = 0;
+            PlayAnimation("explode");
+            m_Bomb.Visible = false;
+            m_Bomb.Thrown = false;
+        }
     }
 }

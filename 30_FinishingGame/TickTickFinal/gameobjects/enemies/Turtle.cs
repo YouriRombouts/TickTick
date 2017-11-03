@@ -9,6 +9,7 @@ class Turtle : AnimatedGameObject
     {
         LoadAnimation("Sprites/Turtle/spr_sneeze@9", "sneeze", false);
         LoadAnimation("Sprites/Turtle/spr_idle", "idle", true);
+        LoadAnimation("Sprites/Turtle/spr_explode@5x5", "explode", false, 0.04f);
         PlayAnimation("idle");
         Reset();
     }
@@ -17,6 +18,7 @@ class Turtle : AnimatedGameObject
     {
         sneezeTime = 0.0f;
         idleTime = 5.0f;
+        PlayAnimation("idle");
     }
 
     public override void Update(GameTime gameTime)

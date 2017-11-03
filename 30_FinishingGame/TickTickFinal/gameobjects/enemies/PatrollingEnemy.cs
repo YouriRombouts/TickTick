@@ -10,6 +10,7 @@ class PatrollingEnemy : AnimatedGameObject
         waitTime = 0.0f;
         velocity.X = 120;
         LoadAnimation("Sprites/Flame/spr_flame@9", "default", true);
+        LoadAnimation("Sprites/Flame/spr_explode@5x5", "explode", false, 0.04f);
         PlayAnimation("default");
     }
 
