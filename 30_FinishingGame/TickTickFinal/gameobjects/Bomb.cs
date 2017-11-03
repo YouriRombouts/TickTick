@@ -11,6 +11,7 @@ public partial class Bomb : AnimatedGameObject
     public float previousYPosition;
     public bool exploded , Thrown, isOnIce, isOnTheGround;
     public float Timer = 2, AnimationTime = 1;
+    public static Vector2 ExposionPos;
 
     public Bomb(Vector2 Pos) : base(2, "bomb")
 {
@@ -28,7 +29,7 @@ public partial class Bomb : AnimatedGameObject
             PlayAnimation("default");
             Timer = 2;
             AnimationTime = 1;
-            velocity = new Vector2(300, 0);
+            velocity = new Vector2(300, 100);
             if (Player.PlayerMirrored)
             {
                 velocity.X *= -1;
@@ -46,7 +47,8 @@ public partial class Bomb : AnimatedGameObject
         else
         {
             if (Thrown == true)
-            {                
+            {
+                DoPhysics();
                 Timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
                 if (Timer <= 0)
                 {
@@ -57,6 +59,7 @@ public partial class Bomb : AnimatedGameObject
                     {
                         visible = false;
                         Thrown = false;
+                        ExposionPos = position;
                     }
                 }
             }

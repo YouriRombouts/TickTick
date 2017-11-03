@@ -23,6 +23,7 @@ class Rocket : AnimatedGameObject
         velocity = Vector2.Zero;
         spawnTime = GameEnvironment.Random.NextDouble() * 5;
         Mod = 1;
+        PlayAnimation("default");
     }
 
     public override void Update(GameTime gameTime)
@@ -57,7 +58,7 @@ class Rocket : AnimatedGameObject
             player.Die(false);
             Reset();
         }
-        else if (CollidesWith(player) && visible && Top.Intersects(player.BoundingBox) && player.Velocity.Y > 0)
+        else if (Mod != 0 && CollidesWith(player) && visible && Top.Intersects(player.BoundingBox) && player.Velocity.Y > 0)
         {         
             player.Jump();
             Mod = 0;

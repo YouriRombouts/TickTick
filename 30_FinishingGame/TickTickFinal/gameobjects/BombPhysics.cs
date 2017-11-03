@@ -12,6 +12,7 @@ partial class Bomb : AnimatedGameObject
         if (!exploded)
         {
             HandleCollisions();
+            Gravity();
         }
     }
 
@@ -34,8 +35,7 @@ partial class Bomb : AnimatedGameObject
                     continue;
                 }
                 Tile currentTile = tiles.Get(x, y) as Tile;
-                Rectangle tileBounds = new Rectangle(x * tiles.CellWidth, y * tiles.CellHeight,
-                                                        tiles.CellWidth, tiles.CellHeight);
+                Rectangle tileBounds = new Rectangle(x * tiles.CellWidth, y * tiles.CellHeight, tiles.CellWidth, tiles.CellHeight);
                 Rectangle boundingBox = this.BoundingBox;
                 boundingBox.Height += 1;
                 if (((currentTile != null && !currentTile.CollidesWith(this)) || currentTile == null) && !tileBounds.Intersects(boundingBox))
@@ -48,6 +48,7 @@ partial class Bomb : AnimatedGameObject
                     if (tileType == TileType.Normal)
                     {
                         position.X += depth.X;
+                        velocity.X = 0;
                     }
                     continue;
                 }
@@ -68,6 +69,13 @@ partial class Bomb : AnimatedGameObject
         }
         position = new Vector2((float)Math.Floor(position.X), (float)Math.Floor(position.Y));
         previousYPosition = position.Y;
+    }
+    public void Gravity()
+    {
+        if(!exploded && !isOnTheGround)
+        {
+            velocity.Y += 55;
+        }
     }
 }
 
