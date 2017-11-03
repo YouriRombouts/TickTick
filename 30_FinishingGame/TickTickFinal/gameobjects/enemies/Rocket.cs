@@ -65,4 +65,8 @@ class Rocket : AnimatedGameObject
             PlayAnimation("explode");
         }
     }
+    public void CheckBombCollision()
+    {
+        Bomb m_Bomb = GameWorld.Find("bomb") as Bomb;
+    }
 }

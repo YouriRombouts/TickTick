@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework.Graphics;
 
 public partial class Bomb : AnimatedGameObject
 {
     public float previousYPosition;
     public bool exploded , Thrown, isOnIce, isOnTheGround;
     public float Timer = 2, AnimationTime = 1;
-    public static Vector2 ExposionPos;
 
     public Bomb(Vector2 Pos) : base(2, "bomb")
 {
@@ -37,6 +37,13 @@ public partial class Bomb : AnimatedGameObject
             velocity += Player.PlayerVel;
         }
     }
+    public override void Reset()
+    {
+        visible = false;
+        Thrown = false;
+        position = Player.pos;
+        PlayAnimation("default");
+    }
 
     public override void Update(GameTime gameTime)
     {
@@ -54,12 +61,11 @@ public partial class Bomb : AnimatedGameObject
                 {
                     velocity = Vector2.Zero;
                     PlayAnimation("explode");
-                    AnimationTime -= (float)gameTime.ElapsedGameTime.TotalSeconds; ;
+                    AnimationTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
                     if (AnimationTime <= 0)
                     {
                         visible = false;
-                        Thrown = false;
-                        ExposionPos = position;
+                        Thrown = false;                        
                     }
                 }
             }

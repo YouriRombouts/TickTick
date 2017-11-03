@@ -49,7 +49,7 @@ partial class Bomb : AnimatedGameObject
                     if (tileType == TileType.Normal)
                     {
                         position.X += depth.X;
-                        if (isOnTheGround)
+                        if (velocity.Y != 0) 
                         {
                             velocity.X = 0;
                         }
