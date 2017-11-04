@@ -49,10 +49,6 @@ class PlayingState : IGameLoopObject
 
     public virtual void Update(GameTime gameTime)
     {
-        if (Camera.Following == null)
-        {
-            Camera.Following = CurrentLevel.Find("player");
-        }
         CurrentLevel.Update(gameTime);
         if (CurrentLevel.GameOver)
         {
