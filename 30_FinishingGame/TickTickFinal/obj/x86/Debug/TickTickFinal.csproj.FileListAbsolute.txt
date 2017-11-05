@@ -287,3 +287,8 @@ C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Wind
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Bomb\Bomb.xnb
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Bomb\spr_explode@5x5.xnb
 C:\Users\timgo\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Sparky\spr_explode@5x5.xnb
+C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Flame\spr_explode@5x5.xnb
+C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Rocket\Bomb\Bomb.xnb
+C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Rocket\Bomb\spr_explode@5x5.xnb
+C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Turtle\spr_explode@5x5.xnb
+C:\Users\YourionY\Documents\GitHub\TickTick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Sparky\spr_explode@5x5.xnb
