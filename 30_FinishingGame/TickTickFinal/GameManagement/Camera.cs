@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework;
     class Camera : GameObject
     {
         static Vector2 m_Offset;
+        static public GameObject Following;
         
         public static Vector2 GetCameraOffset()
         {
