@@ -31,9 +31,9 @@ public class SpriteGameObject : GameObject
     {
         if (layer < 0 && layer > -20)
         {
-            if (Level.playingfieldwidth <= Camera.GetCameraOffset().X + GameEnvironment.Screen.X / 2)
+            if (Level.playingfieldwidth <= Camera.GetCameraOffset().X + GameEnvironment.Screen.X)
             {
-                offset = new Vector2(Level.playingfieldwidth - GameEnvironment.Screen.X / 2, 0) / (-layer); 
+                offset = new Vector2(Level.playingfieldwidth - GameEnvironment.Screen.X, 0) / (-layer); 
             }
             else
             {
@@ -45,9 +45,9 @@ public class SpriteGameObject : GameObject
         {
             offset = new Vector2(0, 0);
         }
-        else if (Level.playingfieldwidth <= Camera.GetCameraOffset().X + GameEnvironment.Screen.X/2)
+        else if (Level.playingfieldwidth <= Camera.GetCameraOffset().X + GameEnvironment.Screen.X)
         {
-            offset = new Vector2(Level.playingfieldwidth - GameEnvironment.Screen.X/2, 0);
+            offset = new Vector2(Level.playingfieldwidth - GameEnvironment.Screen.X, 0);
         }
         else
         {
